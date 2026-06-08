@@ -107,7 +107,6 @@ function guessauto() {
 function compare() {
     indice()
 
-
     if (JSON.stringify(randomcolors) === JSON.stringify(choixjoueur)) {
         alert(" FIN DE LA PARTIEvous avez trouver la combinaison était :           " + choixjoueur);
         disabledbtncolors()
@@ -117,9 +116,7 @@ function compare() {
 
     } else {
         console.log("rater mauvaise combinaison");
-
         // alert("rater rater rater" )
-
     }
 }
 
@@ -176,6 +173,9 @@ function essaiejoueur() {
 
 btnguess.addEventListener("click", function () {
     essaie++
+    // if (timer != null)
+    //         clearInterval(timer)
+    //     console.log(choixjoueur);
     divCj.textContent = ""
     lancertimer()
     // compare()
@@ -217,7 +217,7 @@ function newGame() {
 function affichechoixdujoueur() {
     divCj.textContent = ""
     const colorjoueur = document.createElement('p')
-    colorjoueur.textContent = `votre choix : ${choixjoueur} `
+    colorjoueur.textContent = `Votre choix: ${choixjoueur} `
     divCj.appendChild(colorjoueur)
     // for (let j = 0; j < 10; j++) {
     // }
@@ -242,12 +242,15 @@ function indice() {
         console.log(`il y a ${bonnecouleur} couleur de bonne `);
     } else if (choixjoueur.find((element) => element == "vert" && randomcolors.find((element) => element == "vert"))) {
         bonnecouleur++
+        console.log(`il y a ${bonnecouleur} couleur de bonne `);
 
     } else if (choixjoueur.find((element) => element == "bleu" && randomcolors.find((element) => element == "bleu"))) {
         bonnecouleur++
+        console.log(`il y a ${bonnecouleur} couleur de bonne `);
 
     } else if (choixjoueur.find((element) => element == "jaune" && randomcolors.find((element) => element == "jaune"))) {
         bonnecouleur++
+        console.log(`il y a ${bonnecouleur} couleur de bonne `);
     }
 
 

@@ -16,13 +16,15 @@ body{
     margin: 0;
 }
 
-
+h3{
+    font-size: 50px;
+}
 
 .colors{
     display: flex;
     margin: 0 auto;
     width: 50%;
-    margin-top: 10%;
+    margin-top: 2%;
     gap: 20px;
     margin-bottom: 3%;
     margin-left: 28%;
@@ -36,6 +38,7 @@ body{
 
 .rouge, .vert, .bleu,.jaune{
 padding: 10%;
+border-radius: 20px;
 }
 
 .rouge{
@@ -57,10 +60,42 @@ padding: 10%;
 
 
 
-
-.choixjoueur , .essaie{
+.choixjoueur , .listessaie{
+    font-size: 30px;
+    margin-top: 2%;
+    width: 40%;
+    /* height: 100px; */
+    align-items: center;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
+}
+
+
+.visujoueur, .titre{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
     width: 100%;
+    align-items: center;
+}
+
+
+.btns{
+    margin-left: 24%;
+
+    width: 50%;
+    display: flex;
+}
+
+
+
+.btns button{
+    border-radius: 10px;
     justify-content: center;
+    align-items: center;
+    width: 20%;
+    /* background-color: red; */
+    padding: 20px;
+    
 }
