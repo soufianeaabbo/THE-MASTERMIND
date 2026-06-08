@@ -200,6 +200,8 @@ function lancertimer() {
         secondes--
         if (secondes < 0) {
             console.log("fin du temps");
+            console.log(choixjoueur);
+            
             compare()
             clearInterval(timer)
         }

@@ -28,6 +28,7 @@ h3{
     gap: 20px;
     margin-bottom: 3%;
     margin-left: 28%;
+    
 }
 
 .guess , .newgame{
@@ -39,23 +40,50 @@ h3{
 .rouge, .vert, .bleu,.jaune{
 padding: 10%;
 border-radius: 20px;
+border: none;
 }
+
+
+
 
 .rouge{
      /* transform: rotate(45deg); */
     background-color: red;
 }
 
+
+.rouge:hover{
+     /* transform: rotate(45deg); */
+    background-color: rgb(117, 24, 24);
+    scale: calc(1.1);
+}
+
 .vert{
     background-color: green;
+}
+
+.vert:hover{
+     /* transform: rotate(45deg); */
+    background-color: rgb(98, 201, 30);
+    scale: calc(1.1);
 }
 
 .bleu{
     background-color: blue;
 }
 
+.bleu:hover{
+    background-color: rgb(15, 15, 107);
+    scale: calc(1.1);
+}
+
 .jaune{
     background-color: yellow;
+}
+
+.jaune:hover{
+    background-color: rgb(175, 175, 26);
+    scale: calc(1.1);
 }
 
 
@@ -97,5 +125,14 @@ border-radius: 20px;
     width: 20%;
     /* background-color: red; */
     padding: 20px;
-    
+    border: none;
+   
 }
+
+
+.btns button:hover {
+    background-color: rgb(189, 11, 11);
+    color: white;
+     scale: calc(1.1);
+}
+
