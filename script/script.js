@@ -102,6 +102,8 @@ function guessauto() {
         console.log(choixjoueur);
     }
 
+    
+
 }
 
 function compare() {
@@ -273,10 +275,12 @@ function indice() {
 // comparer les Deux tableau choix du joueur et randomcolors pour savoir si il a gagner ou pas  FAIT
 
 
-// apres chaque essaie le tableau se vide pour que le joueur puisse re faire un guess
+// apres chaque essaie le tableau se vide pour que le joueur puisse re faire un guess FAIT
 
 
-// tant que le nombre d'essaie est inferieur a 10 tu cree une div ou tu affiche les choixdujoueur 
+// tant que le nombre d'essaie est inferieur a 10 tu cree une div ou tu affiche les choixdujoueur  FAIT 
+
+//  INDICE J4AI LE DEBUT MAIS  BCP DE MAL A METTRE EN PLACE
 
 
 
